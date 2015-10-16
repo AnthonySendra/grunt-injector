@@ -33,6 +33,7 @@ module.exports = function(grunt) {
       })(this),
       starttag: '<!-- injector:{{ext}} -->',
       endtag: '<!-- endinjector -->',
+      forceInject: false,
       lineEnding: '\n',
       transform: function (filepath) {
         var e = ext(filepath);
@@ -77,7 +78,7 @@ module.exports = function(grunt) {
 
       f.src.forEach(function(filepath) {
         // Warn on and remove invalid source files.
-        if (!grunt.file.exists(filepath)) {
+        if (!options.forceInject && !grunt.file.exists(filepath)) {
           grunt.log.warn('Source file "' + filepath + '" not found.');
           return;
         }
