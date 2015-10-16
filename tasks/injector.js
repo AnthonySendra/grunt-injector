@@ -76,7 +76,7 @@ module.exports = function(grunt) {
 
       var files = filesToInject[destination][template];
 
-      f.src.forEach(function(filepath) {
+      f.orig.src.forEach(function(filepath) {
         // Warn on and remove invalid source files.
         if (!options.forceInject && !grunt.file.exists(filepath)) {
           grunt.log.warn('Source file "' + filepath + '" not found.');
