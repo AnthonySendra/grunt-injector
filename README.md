@@ -1,6 +1,6 @@
 # grunt-injector
 
-This project is just a fork from [grunt-injector](https://github.com/klei/grunt-injector) because I wanted to see quickly an additional feature but the original project is not maintained. All PR are older than six months. But if the original project accept again PR, I will push mine.
+This project is just a fork from [grunt-injector](https://github.com/klei/grunt-injector) because I wanted to see quickly an additional feature (`options.forceInject`) and the original project is not maintained. When the original project accept PR again, I will push mine.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
