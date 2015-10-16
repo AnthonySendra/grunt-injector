@@ -1,14 +1,6 @@
 # grunt-injector
 
-# HELP WANTED!
-
-**I don't have enough time to maintain this plugin as I would want to, so I'm looking for people who want to help out and be contributors/repository admins.**
-
-## Interested?
-
-**Contact me! See `package.json` for contact information.**
-
-> Inject references to files into other files (think scripts and stylesheets into an html file)
+This project is just a fork from [grunt-injector](https://github.com/klei/grunt-injector) because I wanted to see quickly an additional feature but the original project is not maintained. All PR are older than six months. But if the original project accept again PR, I will push mine.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -134,6 +126,12 @@ Default value: `NULL`
 If set the given function is used as the compareFunction for the array sort function, to sort the source files by.
 
 **N.B.** Shouldn't be used in conjunction with a `bower.json` file as source, because [wiredep](https://github.com/stephenplusplus/wiredep), which collects Bower installed dependencies, has some intelligent sorting built in.
+
+#### options.forceInject
+Type: `Boolean`
+Default value: `false`
+
+Set to `true` will inject the file even if the file path doesn't exist. Could be useful if you want to add some template variables like `{{ locale }}` into the path.
 
 ### Usage Examples
 
